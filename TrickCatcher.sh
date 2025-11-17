@@ -1,6 +1,6 @@
 #!/usr/bin/bash
 
-#SBATCH -J AACommu
+#SBATCH -J TrickCatcher 
 #SBATCH --gres=gpu:1
 #SBATCH --cpus-per-gpu=8
 #SBATCH --mem-per-gpu=29G
@@ -11,6 +11,7 @@
 
 
 /data/yho7374/anaconda3/bin/conda init
+
 source ~/.bashrc
 
 conda activate training
